@@ -8,10 +8,18 @@ import OpenSansV29Latin700Woff from '../fonts/open-sans-v29-latin/open-sans-v29-
 import OpenSansV29Latin700Woff2 from '../fonts/open-sans-v29-latin/open-sans-v29-latin-700.woff2';
 import OpenSansV29Latin700ItalicWoff from '../fonts/open-sans-v29-latin/open-sans-v29-latin-700italic.woff';
 import OpenSansV29Latin700ItalicWoff2 from '../fonts/open-sans-v29-latin/open-sans-v29-latin-700italic.woff2';
-import MontserratV24Latin900Woff from '../fonts/montserrat-v24-latin/montserrat-v24-latin-900.woff';
-import MontserratV24Latin900Woff2 from '../fonts/montserrat-v24-latin/montserrat-v24-latin-900.woff2';
-import MontserratV24Latin900ItalicWoff from '../fonts/montserrat-v24-latin/montserrat-v24-latin-900italic.woff';
-import MontserratV24Latin900ItalicWoff2 from '../fonts/montserrat-v24-latin/montserrat-v24-latin-900italic.woff2';
+
+import PoppinsV20Latin900Woff from '../fonts/poppins-v20-latin/poppins-v20-latin-900.woff';
+import PoppinsV20Latin900Woff2 from '../fonts/poppins-v20-latin/poppins-v20-latin-900.woff2';
+import PoppinsV20LatinRegularWoff from '../fonts/poppins-v20-latin/poppins-v20-latin-regular.woff';
+import PoppinsV20LatinRegularWoff2 from '../fonts/poppins-v20-latin/poppins-v20-latin-regular.woff2';
+
+import RamelayV27Latin500Woff from '../fonts/raleway-v27-latin/raleway-v27-latin-500.woff';
+import RamelayV27Latin500Woff2 from '../fonts/raleway-v27-latin/raleway-v27-latin-500.woff2';
+import RamelayV27Latin600Woff from '../fonts/raleway-v27-latin/raleway-v27-latin-600.woff';
+import RamelayV27Latin600Woff2 from '../fonts/raleway-v27-latin/raleway-v27-latin-600.woff2';
+
+
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -50,54 +58,59 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     src: local(''),
-        url(${MontserratV24Latin900Woff2}) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url(${MontserratV24Latin900Woff}) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url(${PoppinsV20Latin900Woff2}) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url(${PoppinsV20Latin900Woff}) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  /* montserrat-900italic - latin */
+
   @font-face {
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 900;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
     src: local(''),
-        url(${MontserratV24Latin900ItalicWoff2}) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url(${MontserratV24Latin900ItalicWoff}) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url(${PoppinsV20LatinRegularWoff2}) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url(${PoppinsV20LatinRegularWoff}) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  @font-face {
+    font-family: 'Ramelay';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url(${RamelayV27Latin500Woff2}) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url(${RamelayV27Latin500Woff}) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-  html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  @font-face {
+    font-family: 'Ramelay';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url(${RamelayV27Latin600Woff2}) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url(${RamelayV27Latin600Woff}) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
   body {
-    font-size: 1.6rem;
     font-family: ${({ theme }) => theme.font.family.default};
+    color: #444444;
+    font-size: 1.6rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${({ theme }) => theme.font.family.secondary};
-    margin: ${({ theme }) => theme.spacings.large} 0;
-  }
-
-  p {
-    margin: ${({ theme }) => theme.spacings.medium} 0;
-  }
-
-  ul, ol {
-    margin: ${({ theme }) => theme.spacings.medium};
-    padding: ${({ theme }) => theme.spacings.medium};
+    font-family: ${({ theme }) => theme.font.family.alternative};
   }
 
   a {
-    color: ${({ theme }) => theme.colors.secondaryColor};
+    color: ${({ theme }) => theme.colors.primaryColor};
+    text-decoration: none;
   }
+
+  a:hover {
+    color: #1ac7a4;
+    text-decoration: none;
+  }
+
 `;

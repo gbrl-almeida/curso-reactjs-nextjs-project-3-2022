@@ -1,6 +1,6 @@
 export const theme = {
   colors: {
-    primaryColor: '#0A1128',
+    primaryColor: '#0a9f82',
     secondaryColor: '#dc143c',
     white: '#FFFFFF',
     mediumGray: '#DDDDDD',
@@ -8,7 +8,9 @@ export const theme = {
   font: {
     family: {
       default: "'Open Sans', sans-serif",
-      secondary: "'Montserrat', sans-serif",
+      secondary: "'Poppins', sans-serif",
+      alternative: "'Ramelay' sans-serif",
+
     },
     sizes: {
       xsmall: '8rem',
