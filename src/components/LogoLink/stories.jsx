@@ -5,7 +5,7 @@ export default {
   component: LogoLink,
   args: {
     text: 'Logo',
-    srcImg: '',
+    srcImg: 'https://konsi.com.br/assets/img/logo-konsi-name-black.png',
     link: 'http://localhost',
   },
   argTypes: {

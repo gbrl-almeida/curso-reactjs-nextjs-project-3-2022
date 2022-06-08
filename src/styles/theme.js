@@ -9,7 +9,7 @@ export const theme = {
     family: {
       default: "'Open Sans', sans-serif",
       secondary: "'Poppins', sans-serif",
-      alternative: "'Ramelay' sans-serif",
+      alternative: "'Ramelay', sans-serif",
 
     },
     sizes: {

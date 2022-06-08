@@ -2,13 +2,21 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.a`
   ${() => css`
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
+  font-size: 30px;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 
     > img {
-      height: 3rem;
+      max-height: 42px;
     }
+
+    > span {
+      color: #0a9f82;
+    }
+
+
   `}
 `;
