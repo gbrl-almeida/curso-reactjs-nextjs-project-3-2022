@@ -19,8 +19,6 @@ import RamelayV27Latin500Woff2 from '../fonts/raleway-v27-latin/raleway-v27-lati
 import RamelayV27Latin600Woff from '../fonts/raleway-v27-latin/raleway-v27-latin-600.woff';
 import RamelayV27Latin600Woff2 from '../fonts/raleway-v27-latin/raleway-v27-latin-600.woff2';
 
-
-
 export const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Open Sans';

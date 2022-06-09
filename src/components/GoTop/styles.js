@@ -1,17 +1,25 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.a`
-  ${({ theme }) => css`
+  ${({ theme, visible }) => css`
     position: fixed;
-    background: ${theme.colors.primaryColor};
+    background: #13dbb3;
     color: ${theme.colors.white};
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    bottom: 2rem;
-    right: 2rem;
+    width: 40px;
+    height: 40px;
+    bottom: 30px;
+    right: 100px;
+    border-radius: 4px;
     z-index: 6;
+    transition: all 0.4s;
+    visibility: ${visible ? 'visible' : 'hidden'};
+    opacity: ${visible ? 'inherit' : '0'};
+
+    &:hover {
+      background: #53f3d3;
+      color: #fff;
+    }
+
   `}
 `;

@@ -10,7 +10,6 @@ export const theme = {
       default: "'Open Sans', sans-serif",
       secondary: "'Poppins', sans-serif",
       alternative: "'Ramelay', sans-serif",
-
     },
     sizes: {
       xsmall: '8rem',
