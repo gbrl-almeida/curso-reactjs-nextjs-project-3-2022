@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.a`
   ${({ theme }) => css`
-    display: block;
+    display: flex;
     text-decoration: none;
     font-size: ${theme.font.sizes.small};
     padding: ${theme.spacings.small};
