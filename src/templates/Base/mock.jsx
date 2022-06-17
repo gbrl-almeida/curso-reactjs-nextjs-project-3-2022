@@ -1,4 +1,4 @@
-import linksMock from '../../components/NavLinks/mock';
+import linksMock from '../../components/Navbar/mock';
 
 import gridMock from '../../components/GridText/mock';
 import { GridText } from '../../components/GridText';
