@@ -13,8 +13,6 @@ export const GoTop = ({ handleClick }) => {
   const handleScroll = () => {
     if (window.scrollY > 150) {
       setVisible(true);
-    } else {
-      setVisible(false);
     }
   };
 
