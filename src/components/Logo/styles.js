@@ -8,6 +8,7 @@ export const Container = styled.a`
   padding: 0;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  margin-right: auto !important;
 
     > img {
       max-height: 42px;
@@ -16,7 +17,6 @@ export const Container = styled.a`
     > span {
       color: #0a9f82;
     }
-
 
   `}
 `;
